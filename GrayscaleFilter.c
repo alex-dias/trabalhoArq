@@ -1,6 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 
 int main(int argc, char * argv[]) {
         
@@ -41,12 +44,42 @@ int main(int argc, char * argv[]) {
         fread(img, 3, pixels, infile);
 
         start = clock();
+
         for (i = 0; i < pixels; i++) {
                 r = *ptri++;
                 g = *ptri++;    
                 b = *ptri++;
+
+			 
                 __asm {
-                       //colocar o filtro aqui
+				//faz o calculo para o vermelho
+				movzx eax, r
+				mov ebx, 77
+				mul ebx
+				mov ecx, eax
+
+				//faz o calculo para o verde
+				movzx eax, g
+				mov ebx, 151
+				mul ebx
+				add ecx, eax
+
+				//faz o calculo para o azul
+				movzx eax, b
+				mov ebx, 28
+				mul ebx
+				add ecx, eax
+
+				//calcula a soma para fazer a divisao
+				mov ebx, 77
+				add ebx, 151
+				add ebx, 28
+
+				//faz a divisao
+				mov edx, 0
+				mov eax, ecx
+				div ebx
+				mov m, al
                 }
                 *ptro++ = m;
                 *ptro++ = m;
