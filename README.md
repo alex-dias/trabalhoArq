@@ -18,6 +18,9 @@ Primeiramente, o parâmetro R (Red) foi passado para eax e multiplicado por 77 (
 <hr>
 <h4>Versão SIMD</h4>
 
+A versão SIMD foi feita usando-se MMX e SSE. Ela funciona executando paralelamente as operações de multiplicação nos fatores RGB de cada pixel da imagem. Para isso, foi necessário a criação dos vetores mult, div e res. O vetor mult contém valores que serão multiplicados durante a execução, o vetor divs contém os valores que serão divididos. Durante a execução, esses valores são carregados nos registradores xmm e depois são feitos os cálculos em cima deles e em cima dos valores de ptri e de ptro, que contém os valores dos pixels.
+
+<img src="http://i.imgur.com/rdQcCbf.png"></img>
 
 <hr>
 <h4>Imagens testadas</h4>
