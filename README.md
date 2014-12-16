@@ -22,6 +22,39 @@ Primeiramente, o parâmetro R (Red) foi passado para eax e multiplicado por 77 (
 <hr>
 <h4>Imagens testadas</h4>
 
+<h5>Beach</h5>
+
+Original:<br>
+<img src="http://i.imgur.com/9y3Yz7V.png" width="500px" height="282px"></img>
+
+Versão serial:<br>
+<img src="http://i.imgur.com/sqv6Hhe.png" width="500px" height="282px"></img>
+
+Versão SIMD: <br>
+<img src="http://i.imgur.com/qcEawut.png" width="500px" height="282px"></img>
+
+<br><h5>Lorikeet</h5>
+
+Original:<br>
+<img src="http://i.imgur.com/T3B2CZM.png" width="333px" height="500px"></img>
+
+Versão serial: <br>
+<img src="http://i.imgur.com/SzIYvky.png" width="333px" height="500px"></img>
+
+Versão SIMD:<br>
+<img src="http://i.imgur.com/WYHidU9.png" width="333px" height="500px"></img>
+
+
+<br><h5>Flower</h5>
+
+Original:<br>
+<img src="http://i.imgur.com/7Zn2O0B.png"></img>
+
+Versão serial: <br>
+<img src="http://i.imgur.com/2N4MjTM.png"></img>
+
+Versão SIMD:<br>
+<img src="http://i.imgur.com/PwCRlDQ.png"></img>
 
 <hr>
 <h4>Comparação de desempenho</h4>
