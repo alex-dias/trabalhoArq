@@ -62,6 +62,11 @@ Versão SIMD:<br>
 <hr>
 <h4>Comparação de desempenho</h4>
 
+Para comparação de desempenho, foram coletados os valores de execução da versão serial e da SIMD para as 3 imagens testadas. Os resultados foram os seguintes:
+
+<img src="http://i.imgur.com/ThGohju.png"></img><br>
+<img src="http://i.imgur.com/lIukOFw.png"></img>
+
 
 <hr>
 <h4>Créditos</h4>
