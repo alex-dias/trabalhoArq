@@ -25,3 +25,9 @@ Primeiramente, o parâmetro R (Red) foi passado para eax e multiplicado por 77 (
 
 <hr>
 <h4>Comparação de desempenho</h4>
+
+
+<hr>
+<h4>Créditos</h4>
+
+Projeto desenvolvido por Letícia Domingues (RA: 551724) na disciplina de Laboratório de Arquitetura e Organização de Computadores 2, ministrada pelo professor Ricardo Menotti.
